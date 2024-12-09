@@ -45,7 +45,7 @@ export default async function Home({ searchParams }: Props) {
 
   return (
     <Container className="py-24 gap-4">
-      <FlexBox className="w-9/12 justify-between">
+      <FlexBox className="w-10/12 justify-between">
         <FlexBox className="flex-col">
           <H1 className="text-4xl">Quản lý nhân viên</H1>
           <p className="text-xl font-medium">{`${countWithParams} ${label()}`}</p>
@@ -53,10 +53,10 @@ export default async function Home({ searchParams }: Props) {
 
         <AddNhanVienModal chiNhanhList={ChiNhanhList} />
       </FlexBox>
-      <FlexBox className="w-9/12 justify-center">
+      <FlexBox className="w-10/12 justify-center">
         <Search param={param} />
       </FlexBox>
-      <FlexBox className="w-9/12">
+      <FlexBox className="w-10/12">
         <StaffList
           nhanVienList={NhanVienList}
           chiNhanhList={ChiNhanhList}
